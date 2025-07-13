@@ -81,15 +81,15 @@ class Context {
    */
   get trimmedText() {
     if (this.event.isText) {
-      const text = this.event.text.replaceAll('　', ' ').replace(config.BOT_NAME, '').trim();
+      const text = (this.event.text || '').replaceAll('　', ' ').replace(config.BOT_NAME, '').trim();
       return addMark(text);
     }
     if (this.event.isAudio) {
-      const text = this.transcription.replace(config.BOT_NAME, '').trim();
+      const text = (this.transcription || '').replace(config.BOT_NAME, '').trim();
       return addMark(text);
     }
     if (this.event.isImage) {
-      return this.transcription.trim();
+      return (this.transcription || '').trim();
     }
     return '?';
   }
