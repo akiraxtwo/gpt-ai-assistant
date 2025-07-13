@@ -49,7 +49,7 @@ const en = {
   __COMMAND_BOT_SUMMON_DEMO_TEXT: 'What\'s up?',
   __COMMAND_BOT_TALK_LABEL: 'Talk',
   __COMMAND_BOT_TALK_TEXT: 'Talk',
-  __COMMAND_BOT_TALK_ALIASES: [],
+  __COMMAND_BOT_TALK_ALIASES: ['Talk'],
   __COMMAND_BOT_TALK_DEMO_LABEL: 'Talk',
   __COMMAND_BOT_TALK_DEMO_TEXT: 'Talk me about yourself',
   __COMMAND_SUM_ADVISE_LABEL: 'Advise',
