@@ -8,7 +8,7 @@ const getCommand = (text) => (
   Object.values(ALL_COMMANDS)
     .sort((a, b) => b.text.length - a.text.length)
     .find((c) => (
-      c.aliases.includes(text) || text.toLowerCase().includes(c.text.toLowerCase())
+      c.aliases.includes(text) || (text && text.toLowerCase().includes(c.text.toLowerCase()))
     ))
 );
 

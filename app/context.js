@@ -96,15 +96,15 @@ class Context {
 
   get hasBotName() {
     if (this.event.isText) {
-      const text = this.event.text.replaceAll('　', ' ').trim().toLowerCase();
+      const text = (this.event.text || '').replaceAll('　', ' ').trim().toLowerCase();
       return text.startsWith(config.BOT_NAME.toLowerCase());
     }
     if (this.event.isAudio) {
-      const text = this.transcription.toLowerCase();
+      const text = (this.transcription || '').toLowerCase();
       return text.startsWith(config.BOT_NAME.toLowerCase());
     }
     if (this.event.isImage) {
-      const text = this.transcription.toLowerCase();
+      const text = (this.transcription || '').toLowerCase();
       return text.startsWith(config.BOT_NAME.toLowerCase());
     }
     return false;

@@ -41,7 +41,7 @@ const check = (context) => context.hasCommand(COMMAND_TRAVEL_LANGUAGE);
  */
 const exec = (context) => check(context) && (
   async () => {
-    const input = context.text.replace(COMMAND_TRAVEL_LANGUAGE.alias, '').trim();
+    const input = context.trimmedText.replace(COMMAND_TRAVEL_LANGUAGE.alias, '').trim();
     
     if (!input) {
       // If no language specified, show list of supported languages
