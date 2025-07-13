@@ -32,9 +32,13 @@ const handleContext = async (context) => (
   || drawHandler(context)
   || forgetHandler(context)
   || enquireHandler(context)
+  || languageHandler(context)
+  || phrasesHandler(context)
   || reportHandler(context)
   || retryHandler(context)
+  || scenarioHandler(context)
   || searchHandler(context)
+  || travelHandler(context)
   || versionHandler(context)
   || talkHandler(context)
   || context

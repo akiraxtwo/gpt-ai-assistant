@@ -94,6 +94,9 @@ const en = {
   __COMMAND_TRANSLATE_TO_JA_LABEL: '翻成日文', // TODO
   __COMMAND_TRANSLATE_TO_JA_TEXT: '翻成日文', // TODO
   __COMMAND_TRANSLATE_TO_JA_PROMPT: '請將以下內容翻譯成日文。', // TODO
+  __COMMAND_TRAVEL_TRANSLATE_LABEL: 'Travel Translate',
+  __COMMAND_TRAVEL_TRANSLATE_TEXT: 'Travel Translation Assistant',
+  __COMMAND_TRAVEL_TRANSLATE_PROMPT: 'I am your travel translation assistant. Please provide the phrase you need to translate and the target language. I can also help with common travel scenarios like ordering food, asking for directions, or emergency situations.',
   __COMPLETION_DEFAULT_SYSTEM_PROMPT: '', // TODO
   __COMPLETION_DEFAULT_HUMAN_PROMPT: (name) => (name ? `I am ${name}` : 'Hello'),
   __COMPLETION_DEFAULT_AI_PROMPT: (name) => (name ? `I am ${name}` : 'Hello'),
@@ -103,7 +106,27 @@ const en = {
   __COMPLETION_QUOTATION_MARK_OPENING: '"',
   __COMPLETION_QUOTATION_MARK_CLOSING: '"',
   __COMPLETION_VISION: 'What\'s in this image?',
+  __COMPLETION_TRAVEL_ASSISTANT: 'I am your travel translation assistant. How can I help you today?',
   __ERROR_ECONNABORTED: 'Timed out',
+  __TRAVEL_TARGET_LANGUAGE: 'Target Language',
+  __TRAVEL_SCENARIO: 'Travel Scenario',
+  __TRAVEL_TRANSLATE_SUCCESS: 'Translation complete. Here is your phrase in the target language:',
+  __TRAVEL_COMMON_PHRASES: 'Common Travel Phrases',
+  __TRAVEL_PHRASES_PROMPT: 'Here are common travel phrases you might need in various languages:',
+  __TRAVEL_SCENARIO_PROMPT: 'Please provide useful phrases and translations for the following travel scenario. Include common expressions, cultural tips, and pronunciation guidance where helpful.',
+  __TRAVEL_SCENARIO_RESULT: 'Here are useful phrases for this travel scenario:',
+  __TRAVEL_COMMON_SCENARIOS: 'Common Travel Scenarios (use format "scenario|language"):',
+  __TRAVEL_SCENARIO_RESTAURANT: 'Restaurant/Dining',
+  __TRAVEL_SCENARIO_HOTEL: 'Hotel/Accommodation',
+  __TRAVEL_SCENARIO_TRANSIT: 'Transportation/Directions',
+  __TRAVEL_SCENARIO_EMERGENCY: 'Emergency/Health',
+  __TRAVEL_SCENARIO_SHOPPING: 'Shopping/Markets',
+  __TRAVEL_SCENARIO_SIGHTSEEING: 'Sightseeing/Tourism',
+  __TRAVEL_LANGUAGE: 'Travel Language',
+  __TRAVEL_LANGUAGE_PROMPT: 'Specify your preferred language for travel translations',
+  __TRAVEL_LANGUAGE_SELECT: 'Please select a language for travel translations:',
+  __TRAVEL_LANGUAGE_INVALID: 'Sorry, the language you specified is not supported. Please select from the list of supported languages.',
+  __TRAVEL_LANGUAGE_SUCCESS: 'Great! Your preferred language has been set to {{language}}. All travel translations will now use this language by default.',
   __ERROR_UNKNOWN: 'Something went wrong',
   __ERROR_MAX_GROUPS_REACHED: 'Maximum groups reached',
   __ERROR_MAX_USERS_REACHED: 'Maximum users reached',
@@ -111,6 +134,12 @@ const en = {
   __MESSAGE_NEW_VERSION_AVAILABLE: (version) => `A new version ${version} is now available!`,
   __SOURCE_NAME_SOME_GROUP: 'Someone Group',
   __SOURCE_NAME_SOMEONE: 'Someone',
+  __TRAVEL_PHRASE_GREETING: 'Hello/Greeting',
+  __TRAVEL_PHRASE_THANKS: 'Thank you',
+  __TRAVEL_PHRASE_DIRECTIONS: 'How do I get to...?',
+  __TRAVEL_PHRASE_RESTAURANT: 'I would like to order...',
+  __TRAVEL_PHRASE_EMERGENCY: 'I need help!',
+  __TRAVEL_PHRASE_ACCOMMODATION: 'Do you have any rooms available?'
 };
 
 export default en;
