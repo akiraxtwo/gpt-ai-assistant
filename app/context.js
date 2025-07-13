@@ -201,7 +201,7 @@ class Context {
     text,
     aliases,
   }) {
-    const content = this.trimmedText.toLowerCase();
+    const content = (this.trimmedText || '').toLowerCase();
     if (aliases.some((alias) => content.startsWith(alias.toLowerCase()))) return true;
     if (content.startsWith(text.toLowerCase())) return true;
     return false;
